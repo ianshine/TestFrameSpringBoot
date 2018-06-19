@@ -24,10 +24,10 @@ public class InsertRecordInDatabaseWithJdbcTemplate {
 
     public static DataSource dataSource;
 
-    public static DataSource getSource() {
-        dataSource = getDataSource();
-        return dataSource;
-    }
+//    public static DataSource getSource() {
+//        dataSource = getDataSource();
+//        return dataSource;
+//    }
 
 
     @Test
