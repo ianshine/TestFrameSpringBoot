@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deeb63c7-7c08-4d77-9cac-2f2ae1b4d638" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpCilent/HttpRequestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/jdbc/JdbcUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/jdbc/JdbcUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetEvnAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/test-address.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/dataSource/InsertRecordInDatabaseWithJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/dataSource/InsertRecordInDatabaseWithJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/springBoot/TestFrame/dataSource/InsertRecordInDatabaseWithJdbcTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springBoot/TestFrame/dataSource/InsertRecordInDatabaseWithJdbcTemplate.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,19 +18,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JdbcUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/jdbc/JdbcUtil.java">
+      <file leaf-file-name="test-address.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/test-address.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="114">
+              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpRequestUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpCilent/HttpRequestUtil.java">
+      <file leaf-file-name="GetEvnAddress.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetEvnAddress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-140" />
+            <state relative-caret-position="319">
+              <caret line="19" column="94" selection-start-line="19" selection-start-column="94" selection-end-line="19" selection-end-column="94" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -50,9 +55,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/jdbc/JdbcUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/dataSource/InsertRecordInDatabaseWithJdbcTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/jdbc/JdbcUtilTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpCilent/HttpRequestUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/dataSource/InsertRecordInDatabaseWithJdbcTemplate.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/test-address.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetEvnAddress.java" />
       </list>
     </option>
   </component>
@@ -83,9 +91,11 @@
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
-    <option name="height" value="852" />
+    <option name="height" value="900" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -125,6 +135,43 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TestFrame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestFrame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestFrame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestFrame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestFrame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -162,7 +209,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JdbcUtilTest.JdbcTest">
+  <component name="RunManager" selected="Application.GetEvnAddress">
+    <configuration name="GetEvnAddress" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.springBoot.TestFrame.util.GetEvnAddress" />
+      <module name="TestFrame" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springBoot.TestFrame.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -263,9 +321,11 @@
       <item itemvalue="Spring Boot.Test01Application" />
       <item itemvalue="JUnit.InsertRecordInDatabaseWithJdbcTemplate.test" />
       <item itemvalue="JUnit.JdbcUtilTest.JdbcTest" />
+      <item itemvalue="Application.GetEvnAddress" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GetEvnAddress" />
         <item itemvalue="JUnit.JdbcUtilTest.JdbcTest" />
         <item itemvalue="JUnit.InsertRecordInDatabaseWithJdbcTemplate.test" />
       </list>
@@ -282,7 +342,7 @@
       <option name="presentableId" value="Default" />
       <updated>1529391284794</updated>
       <workItem from="1529391288144" duration="472000" />
-      <workItem from="1529392147683" duration="1102000" />
+      <workItem from="1529392147683" duration="3467000" />
     </task>
     <servers />
   </component>
@@ -301,10 +361,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1574000" />
+    <option name="totallyTimeSpent" value="3939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -368,34 +429,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/jdbc/JdbcUtilTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpCilent/HttpRequestUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#325#341#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="114">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/dataSource/InsertRecordInDatabaseWithJdbcTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="39">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/jdbc/JdbcUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/jdbc/JdbcUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="-2620">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpCilent/HttpRequestUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140" />
+        <state relative-caret-position="76">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/test-address.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetEvnAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="19" column="94" selection-start-line="19" selection-start-column="94" selection-end-line="19" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
