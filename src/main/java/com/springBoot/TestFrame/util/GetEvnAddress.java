@@ -7,8 +7,8 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public class GetEvnAddress {
-    //黑白名单服务
-    private static String inseturl;
+    //数据预览
+    private static String dataPreviewUrl;
     private static String isurl;
     private static String delurl;
 
@@ -23,8 +23,8 @@ public class GetEvnAddress {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            //黑白名单
-            inseturl = prop.getProperty("inseturl").toString();
+            //数据预览
+            dataPreviewUrl = prop.getProperty("dataPreviewUrl").toString();
             isurl = prop.getProperty("isurl").toString();
             delurl = prop.getProperty("delurl").toString();
 
@@ -35,8 +35,8 @@ public class GetEvnAddress {
 
     }
     //黑白名单服务
-    public static String getInseturl() {
-        return inseturl;
+    public static String getDataPreviewUrl() {
+        return dataPreviewUrl;
     }
 
     public static String getIsurl() {return isurl;}
@@ -45,7 +45,7 @@ public class GetEvnAddress {
 
 
     public static void main(String args[]) {
-        System.out.println(getInseturl());
+        System.out.println(getDataPreviewUrl());
         System.out.println(getIsurl());
         System.out.println(getDelurl());
 

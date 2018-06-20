@@ -2,11 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deeb63c7-7c08-4d77-9cac-2f2ae1b4d638" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetEvnAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test-address.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_base_1_0_4_beta1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_base_1_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_core_1_0_4_beta1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_core_1_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_extra_1_0_4_beta1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_extra_1_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_1_0_4_beta1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_1_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_autoconfigure_2_0_3_beta1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_autoconfigure_2_0_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_starter_2_0_3_beta1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_starter_2_0_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/dataSource/InsertRecordInDatabaseWithJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/dataSource/InsertRecordInDatabaseWithJdbcTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestFrame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestFrame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpCilent/HttpRequestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpUtil/HttpRequestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetEvnAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetEvnAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test-address.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test-address.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springBoot/TestFrame/httpCilent/HttpRequestUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springBoot/TestFrame/util/GetEvnAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springBoot/TestFrame/util/GetEvnAddress.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test-address.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test-address.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MachineLearning/DataPreview.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MachineLearning/DataPreview.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,20 +34,41 @@
       <file leaf-file-name="test-address.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/test-address.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="38">
+              <caret line="2" column="14" selection-start-line="2" selection-end-line="2" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetEvnAddress.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GetEvnAddress.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetEvnAddress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="19" column="94" selection-start-line="19" selection-start-column="94" selection-end-line="19" selection-end-column="94" />
+            <state relative-caret-position="152">
+              <caret line="37" column="42" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataPreview.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -58,9 +92,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/jdbc/JdbcUtilTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpCilent/HttpRequestUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/dataSource/InsertRecordInDatabaseWithJdbcTemplate.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java" />
         <option value="$PROJECT_DIR$/src/main/resources/test-address.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetEvnAddress.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpUtil/HttpRequestUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/JsonUtil.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java" />
       </list>
     </option>
   </component>
@@ -142,6 +179,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
+              <item name="httpUtil" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestFrame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -171,6 +217,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestFrame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="DataPreview" type="1a9f42e2:ClassTreeNode" />
             </path>
           </expand>
           <select />
@@ -209,7 +264,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GetEvnAddress">
+  <component name="RunManager" selected="JUnit.DataPreview.DataPreviewTest">
     <configuration name="GetEvnAddress" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.springBoot.TestFrame.util.GetEvnAddress" />
       <module name="TestFrame" />
@@ -223,6 +278,52 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="DataPreview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestFrame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MachineLearning.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="MachineLearning" />
+      <option name="MAIN_CLASS_NAME" value="MachineLearning.DataPreview" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="DataPreview.DataPreviewTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestFrame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MachineLearning.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="MachineLearning" />
+      <option name="MAIN_CLASS_NAME" value="MachineLearning.DataPreview" />
+      <option name="METHOD_NAME" value="DataPreviewTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="InsertRecordInDatabaseWithJdbcTemplate.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestFrame" />
@@ -322,10 +423,14 @@
       <item itemvalue="JUnit.InsertRecordInDatabaseWithJdbcTemplate.test" />
       <item itemvalue="JUnit.JdbcUtilTest.JdbcTest" />
       <item itemvalue="Application.GetEvnAddress" />
+      <item itemvalue="JUnit.DataPreview" />
+      <item itemvalue="JUnit.DataPreview.DataPreviewTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DataPreview.DataPreviewTest" />
         <item itemvalue="Application.GetEvnAddress" />
+        <item itemvalue="JUnit.DataPreview" />
         <item itemvalue="JUnit.JdbcUtilTest.JdbcTest" />
         <item itemvalue="JUnit.InsertRecordInDatabaseWithJdbcTemplate.test" />
       </list>
@@ -342,7 +447,7 @@
       <option name="presentableId" value="Default" />
       <updated>1529391284794</updated>
       <workItem from="1529391288144" duration="472000" />
-      <workItem from="1529392147683" duration="3467000" />
+      <workItem from="1529392147683" duration="6083000" />
     </task>
     <servers />
   </component>
@@ -359,9 +464,18 @@
     <history-entry file="JdbcUtilTest_JdbcTest - 2018.06.19 at 15h 24m 24s.xml">
       <configuration name="JdbcUtilTest.JdbcTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DataPreview - 2018.06.20 at 11h 20m 18s.xml">
+      <configuration name="DataPreview" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataPreview_DataPreviewTest - 2018.06.20 at 14h 17m 21s.xml">
+      <configuration name="DataPreview.DataPreviewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataPreview_DataPreviewTest - 2018.06.20 at 14h 20m 00s.xml">
+      <configuration name="DataPreview.DataPreviewTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3939000" />
+    <option name="totallyTimeSpent" value="6555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -384,11 +498,11 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2921212" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34060606" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -432,13 +546,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpCilent/HttpRequestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/dataSource/InsertRecordInDatabaseWithJdbcTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
@@ -463,24 +570,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpUtil/HttpRequestUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        <state relative-caret-position="-769">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/JsonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/test-address.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="38">
+          <caret line="2" column="14" selection-start-line="2" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetEvnAddress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="19" column="94" selection-start-line="19" selection-start-column="94" selection-end-line="19" selection-end-column="94" />
+        <state relative-caret-position="152">
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
