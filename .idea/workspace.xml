@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deeb63c7-7c08-4d77-9cac-2f2ae1b4d638" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_base_1_0_4_beta1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_base_1_0_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_core_1_0_4_beta1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_core_1_0_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_extra_1_0_4_beta1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_extra_1_0_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_1_0_4_beta1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_1_0_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_autoconfigure_2_0_3_beta1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_autoconfigure_2_0_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_starter_2_0_3_beta1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_starter_2_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MachineLearning/BaseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestFrame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestFrame.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpCilent/HttpRequestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpUtil/HttpRequestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetEvnAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetEvnAddress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test-address.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test-address.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/springBoot/TestFrame/httpCilent/HttpRequestUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/springBoot/TestFrame/util/GetEvnAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springBoot/TestFrame/util/GetEvnAddress.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test-address.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test-address.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/MachineLearning/DataPreview.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MachineLearning/DataPreview.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,8 +46,20 @@
       <file leaf-file-name="DataPreview.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            <state relative-caret-position="77">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseCase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MachineLearning/BaseCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,8 +70,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
+            <state relative-caret-position="2147">
+              <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -95,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/test-address.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetEvnAddress.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpUtil/HttpRequestUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MachineLearning/BaseCase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/JsonUtil.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java" />
@@ -177,24 +181,6 @@
               <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="httpUtil" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestFrame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestFrame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -217,15 +203,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestFrame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="DataPreview" type="1a9f42e2:ClassTreeNode" />
             </path>
           </expand>
           <select />
@@ -447,23 +424,11 @@
       <option name="presentableId" value="Default" />
       <updated>1529391284794</updated>
       <workItem from="1529391288144" duration="472000" />
-      <workItem from="1529392147683" duration="6083000" />
+      <workItem from="1529392147683" duration="8398000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InsertRecordInDatabaseWithJdbcTemplate_test - 2018.06.19 at 14h 55m 24s.xml">
-      <configuration name="InsertRecordInDatabaseWithJdbcTemplate.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InsertRecordInDatabaseWithJdbcTemplate_test - 2018.06.19 at 15h 11m 18s.xml">
-      <configuration name="InsertRecordInDatabaseWithJdbcTemplate.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InsertRecordInDatabaseWithJdbcTemplate_test - 2018.06.19 at 15h 23m 07s.xml">
-      <configuration name="InsertRecordInDatabaseWithJdbcTemplate.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JdbcUtilTest_JdbcTest - 2018.06.19 at 15h 24m 24s.xml">
-      <configuration name="JdbcUtilTest.JdbcTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DataPreview - 2018.06.20 at 11h 20m 18s.xml">
       <configuration name="DataPreview" configurationId="JUnit" />
     </history-entry>
@@ -473,9 +438,30 @@
     <history-entry file="DataPreview_DataPreviewTest - 2018.06.20 at 14h 20m 00s.xml">
       <configuration name="DataPreview.DataPreviewTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DataPreview_DataPreviewTest - 2018.06.20 at 14h 20m 49s.xml">
+      <configuration name="DataPreview.DataPreviewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataPreview_DataPreviewTest - 2018.06.20 at 15h 28m 54s.xml">
+      <configuration name="DataPreview.DataPreviewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataPreview_DataPreviewTest - 2018.06.20 at 15h 34m 35s.xml">
+      <configuration name="DataPreview.DataPreviewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataPreview_DataPreviewTest - 2018.06.20 at 15h 45m 02s.xml">
+      <configuration name="DataPreview.DataPreviewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataPreview_DataPreviewTest - 2018.06.20 at 15h 45m 39s.xml">
+      <configuration name="DataPreview.DataPreviewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataPreview_DataPreviewTest - 2018.06.20 at 15h 46m 10s.xml">
+      <configuration name="DataPreview.DataPreviewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataPreview_DataPreviewTest - 2018.06.20 at 16h 06m 10s.xml">
+      <configuration name="DataPreview.DataPreviewTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6555000" />
+    <option name="totallyTimeSpent" value="8870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -498,7 +484,7 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34060606" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31878787" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -577,20 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/JsonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/test-address.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -608,10 +580,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MachineLearning/BaseCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2147">
+          <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/JsonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2351">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#2628#2657#0" expanded="true" />
+            <element signature="e#3867#3875#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MachineLearning/DataPreview.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        <state relative-caret-position="77">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
