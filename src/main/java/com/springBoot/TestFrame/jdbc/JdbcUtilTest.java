@@ -15,12 +15,13 @@ public class JdbcUtilTest extends InsertRecordInDatabaseWithJdbcTemplate{
     @Test
     public void JdbcTest(){
 
-        dataSource = getDataSource();
+        dataSource = getMachineLearningDataSource();
+
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
 
         String tablename = "t_data";
         Map<String,Object> value = new HashMap<String, Object>();
-        value.put("name","BankingData111");
+        value.put("name","test111");
 
         List<Map<String, Object>> result = JdbcUtil.queryData(jdbcTemplate,tablename,value);
 
