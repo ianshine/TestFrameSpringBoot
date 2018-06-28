@@ -60,24 +60,33 @@ public class LocalFileUpload extends BaseCase{
      */
     @Test
     public void HdfsPathCheckTest(){
-        Map<String, Object> dbMap = new HashMap<>();
-//        dbMap.put("uri",GenerationPath01);
+        Map<String, String> dbMap = new HashMap<>();
+        dbMap.put("uri",GenerationPath01);
 //        String DataJson = JSON.toJSONString(dbMap);
 //        System.out.println(DataJson);
 
-        String CheckUrl = HdfsPathCheck+UserName+"&uri="+GenerationPath01;
-//        String CheckUrl = HdfsPathCheck+UserName;
-//        String params = "uri=hdfs://tdhdfs/user/turing/data/lei.li/data_temp/u-75df488a-9654-4962-8358-19a3976b4dc8-creditCARD_Mac.csv";
+        String CheckUrl = HdfsPathCheck+UserName;
 
         String resp = null;
         try {
-//            resp = httpRequestUtil.sendGetNoData(CheckUrl);
-            resp = httpRequestUtil.get(CheckUrl);
+            resp = httpRequestUtil.doGet(CheckUrl,dbMap);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         System.out.println(resp);
+        JSONObject jsonObject = JSON.parseObject(resp);
+        String msg = jsonObject.getString("msg");
+        String status = jsonObject.getString("status");
+        String valid = jsonObject.getString("valid");
+        String existed = jsonObject.getString("existed");
+
+        //返回值校验
+        Assert.assertEquals("文件存在",msg);
+        Assert.assertEquals("200",status);
+        Assert.assertEquals("true",valid);
+        Assert.assertEquals("true",existed);
+
 
     }
 }
