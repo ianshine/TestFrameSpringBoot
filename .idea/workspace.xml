@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deeb63c7-7c08-4d77-9cac-2f2ae1b4d638" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetAddress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpUtil/HttpRequestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpUtil/HttpRequestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/test-address.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test-address.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/ci/TestSuites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/ci/TestSuites.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/BaseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/BaseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test-address.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test-address.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/springBoot/TestFrame/ci/TestSuites.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/springBoot/TestFrame/ci/TestSuites.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/springBoot/TestFrame/machineLearning/BaseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/springBoot/TestFrame/machineLearning/BaseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/springBoot/TestFrame/machineLearning/LocalFileUpload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/springBoot/TestFrame/machineLearning/LocalFileUpload.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LocalFileUpload.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LocalFileUpload.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="37" column="55" lean-forward="true" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+            <state relative-caret-position="627">
+              <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,7 +67,7 @@
       <file leaf-file-name="GetAddress.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetAddress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
+            <state relative-caret-position="817">
               <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -87,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test-address.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test-address.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/test-address.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="6" column="13" selection-start-line="6" selection-end-line="6" selection-end-column="13" />
+            <state>
+              <caret column="47" selection-start-column="47" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -155,9 +146,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/ci/TestSuites.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpUtil/HttpRequestUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/BaseCase.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/test-address.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetAddress.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/test-address.properties" />
       </list>
     </option>
   </component>
@@ -538,14 +529,11 @@
       <option name="presentableId" value="Default" />
       <updated>1529391284794</updated>
       <workItem from="1529391288144" duration="472000" />
-      <workItem from="1529392147683" duration="56737000" />
+      <workItem from="1529392147683" duration="57922000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GetAddress_getTest - 2018.06.29 at 15h 51m 00s.xml">
-      <configuration name="GetAddress.getTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GetAddress_getTest - 2018.06.29 at 15h 51m 26s.xml">
       <configuration name="GetAddress.getTest" configurationId="JUnit" />
     </history-entry>
@@ -573,9 +561,12 @@
     <history-entry file="LocalFileUpload_FileUploadTest - 2018.06.29 at 16h 00m 56s.xml">
       <configuration name="LocalFileUpload.FileUploadTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LocalFileUpload_FileUploadTest - 2018.06.29 at 16h 14m 08s.xml">
+      <configuration name="LocalFileUpload.FileUploadTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57209000" />
+    <option name="totallyTimeSpent" value="58394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -598,7 +589,7 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32969698" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23272727" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3297568" />
       <window_info anchor="bottom" id="Spring" order="7" />
@@ -863,6 +854,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/BaseCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -875,7 +876,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/GetAddress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
+        <state relative-caret-position="817">
           <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -887,18 +888,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/test-address.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="6" column="13" selection-start-line="6" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="37" column="55" lean-forward="true" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="47" selection-start-column="47" selection-end-column="47" />
         </state>
       </provider>
     </entry>

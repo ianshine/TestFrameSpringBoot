@@ -12,13 +12,7 @@ import java.util.Map;
 
 public class LocalFileUpload extends BaseCase {
     private static final Log log = LogFactory.getLog(DataPreviewTest.class);
-
-    //    String FileUploadUrl = "http://10.58.10.48:8080/data/manage/temp";
-//    String FileUploadUrl = GetAdd("FileUploadUrl");
-    //    String filePath = "/Users/lilei/Documents/git/TestFrame/src/main/resources/dataFile/creditCARD_Mac.csv";
-//    String filePath = GetAdd("filePath");
-    //    String UserName = "?loginName=lei.li";
-//    String UserName = GetAdd("UserNamelilei");
+    String GenerationPath = null;
 
 
     String HdfsPathCheck = "http://10.58.10.48:8080/data/manage/check";
@@ -27,21 +21,20 @@ public class LocalFileUpload extends BaseCase {
 
     String delDataUrl = "http://10.58.10.48:8080/data/manage/tableDelete";
 
-    String GenerationPath = null;
+
 
     /**
      * 数据源引入–文件上传
      */
     @Test
     public void FileUploadTest() {
-
-        //    String FileUploadUrl = "http://10.58.10.48:8080/data/manage/temp";
+        //配置文件地址
         String FileUploadUrl = GetAdd("LocalFileUpload");
-        //    String filePath = "/Users/lilei/Documents/git/TestFrame/src/main/resources/dataFile/creditCARD_Mac.csv";
-        String filePath = GetAdd("filePath");
-        //    String UserName = "?loginName=lei.li";
         String UserName = GetAdd("UserNamelilei");
+        //数据准备的文件目录
+        String filePath = GetAdd("filePath");
 
+        //发起数据源引入–文件上传请求
         String resp = null;
         try {
             resp = httpRequestUtil.upload(FileUploadUrl + UserName, filePath);
@@ -52,16 +45,17 @@ public class LocalFileUpload extends BaseCase {
             e.printStackTrace();
         }
 
+        //返回值解析
         JSONObject jsonObject = JSON.parseObject(resp);
         String msg = jsonObject.getString("msg");
         String status = jsonObject.getString("status");
         String path = jsonObject.getString("path");
-
         GenerationPath = path;
 
+        //返回值校验
         Assert.assertEquals("上传文件成功", msg);
         Assert.assertEquals("200", status);
-//        Assert.assertEquals(GenerationPath00,path);
+        Assert.assertEquals(GenerationPath,path);
 
 
     }
