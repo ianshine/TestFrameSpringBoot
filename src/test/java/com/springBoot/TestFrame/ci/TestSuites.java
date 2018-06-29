@@ -9,6 +9,7 @@ import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
 @SuiteClasses({
+        //机器学习
         LocalFileUpload.class
         })
 

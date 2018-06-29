@@ -101,7 +101,7 @@ public class HttpRequestUtil {
     }
 
     /**
-     * 向指定URL发送GET方法的请求，字符以"？"连接
+     * 向指定URL发送GET方法的请求，字符以"？"连接，后面为json格式
      *
      * @param url   发送请求的URL
      * @param param 请求参数
