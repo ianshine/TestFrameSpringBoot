@@ -1,6 +1,6 @@
 package com.springBoot.TestFrame.dataSource;
 
-import com.springBoot.TestFrame.util.GetEvnAddress;
+import com.springBoot.TestFrame.util.GetAddress;
 import org.junit.jupiter.api.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -27,11 +27,19 @@ public class InsertRecordInDatabaseWithJdbcTemplate {
 //        return dataSource;
 //    }
 
-    GetEvnAddress getEvnAddress = new GetEvnAddress();
-    private final String driverClassName = getEvnAddress.getDriverClassName();
-    private final String machineLearningUrl = getEvnAddress.getMachineLearningUrl();
-    private final String machineLearningDbUsername = getEvnAddress.getMachineLearningDbUsername();
-    private final String machineLearningDbPassword = getEvnAddress.getMachineLearningDbPassword();
+    GetAddress getEvnAddress = new GetAddress();
+    private final String driverClassName = getEvnAddress.GetAdd("driverClassName");
+    private final String machineLearningUrl = getEvnAddress.GetAdd("machineLearningUrl");
+    private final String machineLearningDbUsername = getEvnAddress.GetAdd("machineLearningDbUsername");
+    private final String machineLearningDbPassword = getEvnAddress.GetAdd("machineLearningDbPassword");
+
+
+//    private final String driverClassName = getEvnAddress.getDriverClassName();
+//    private final String machineLearningUrl = getEvnAddress.getMachineLearningUrl();
+//    private final String machineLearningDbUsername = getEvnAddress.getMachineLearningDbUsername();
+//    private final String machineLearningDbPassword = getEvnAddress.getMachineLearningDbPassword();
+
+
 
     public DriverManagerDataSource getMachineLearningDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
@@ -55,7 +63,7 @@ public class InsertRecordInDatabaseWithJdbcTemplate {
 
         JdbcTemplate template = new JdbcTemplate(dataSource);
 
-        List rows = template.queryForList("select * from t_data  where 1=1");
+        List rows = template.queryForList("select * from t_data where 1=1");
 //        List rows = template.queryForList("SELECT * FROM t_data WHERE 1=1  and name = 'BankingData111'");
 
 
