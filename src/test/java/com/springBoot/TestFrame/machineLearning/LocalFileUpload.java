@@ -98,6 +98,7 @@ public class LocalFileUpload extends BaseCase {
 
     /**
      * 数据源引入–数据库数据
+     * 链接失败
      */
     @Test
     public void DbConnectionTest() {
@@ -137,28 +138,137 @@ public class LocalFileUpload extends BaseCase {
     public void DbPreviewTest() {
         String dbPreviewUrl = "http://10.58.10.48:8080/data/manage/dbPreview?loginName=lei.li";
 
-        Map<String, Object> dbMap = new HashMap<>();
+        Map<String, String> dbMap = new HashMap<>();
         dbMap.put("host", "10.57.17.233");
         dbMap.put("port", "3306");
         dbMap.put("userName", "turing");
         dbMap.put("password", "turing123");
-        dbMap.put("tableName", "page");
+        dbMap.put("tableName", "t_data");
         dbMap.put("version", "5.7.19");
         dbMap.put("type", "MySQL");
         dbMap.put("encoding", "utf8");
-        dbMap.put("previewLines", "100");
+        dbMap.put("previewLines", "1");
 
-        String DataJson = JSON.toJSONString(dbMap);
-        log.info(DataJson);
+//        String DataJson = JSON.toJSONString(dbMap);
+//        log.info(DataJson);
 
         String resp = null;
         try {
-            resp = httpRequestUtil.doPost(dbPreviewUrl, DataJson);
+            resp = httpRequestUtil.doGet(dbPreviewUrl, dbMap);
 //            resp = httpRequestUtil.sendPost(dbPreviewUrl,DataJson);
         } catch (Exception e) {
             e.printStackTrace();
         }
         System.out.println(resp);
+
+    }
+
+    /**
+     * 数据预览
+     */
+    @Test
+    public void PreviewTest() {
+        String PreviewUrl = "http://10.58.10.48:8080/data/manage/preview?loginName=lei.li";
+
+        Map<String, String> dbMap = new HashMap<>();
+        dbMap.put("colDelimiter", "0x2C");
+        dbMap.put("encoding", "UTF-8");
+        dbMap.put("firstLineSchema", "true");
+        dbMap.put("format", "csv");
+        dbMap.put("lineNumbers", "1");
+        dbMap.put("path", "");//上传文件HDFS缓存路径，即上传文件的时候返回值path
+        dbMap.put("protocol", "LOCAL");//上传方式，LOCAL（本地），HDFS（HDFS）,DATABASE(数据库)
+        dbMap.put("randomPreview", "false");
+        dbMap.put("rowDelimiter", "自动识别处理");
+
+//        String DataJson = JSON.toJSONString(dbMap);
+//        log.info(DataJson);
+
+        String resp = null;
+        try {
+//            resp = httpRequestUtil.doPost(PreviewUrl, DataJson);
+            resp = httpRequestUtil.doGet(PreviewUrl, dbMap);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(resp);
+
+
+    }
+
+    /**
+     * 数据保存
+     */
+    public void DataSaveTest() {
+        String SaveUrl = "http://10.58.10.48:8080/data/manage/save?loginName=lei.li";
+
+        Map<String, String> dbMap = new HashMap<>();
+        dbMap.put("name", "");//hive表名称
+        dbMap.put("targetFormat", "parquet");//存入hive的文件格式
+        dbMap.put("protocol", "LOCAL");//数据上传方式。LOCAL（本地），HDFS（HDFS），DATABASE(数据库)
+        dbMap.put("uri", "");
+        dbMap.put("meta", "");
+        dbMap.put("format", "csv");
+        dbMap.put("firstLineSchema", "false");//首行是否是字段名
+        dbMap.put("colDelimiter", "0x2C");
+        dbMap.put("dbTable", "自动识别处理");
+        dbMap.put("format", "csv");
+        dbMap.put("columnTypeCheck", "");//列类型检查PERMISSIVE（设置为null），DROPMALFORMED（抛掉异常行），FAILFAST（引入失败）
+        dbMap.put("rowDelimiter", "自动识别处理");
+        dbMap.put("password", "自动识别处理");
+        dbMap.put("dbHost", "自动识别处理");
+        dbMap.put("dbName", "自动识别处理");
+        dbMap.put("sqlStatement", "");
+        dbMap.put("columnLengthCheck", "");//列长度检查DROPMALFORMED（抛掉异常行），FAILFAST（引入失败）
+        dbMap.put("encoding", "自动识别处理");
+        dbMap.put("userName", "自动识别处理");
+        dbMap.put("dbType", "UTF-8");
+        dbMap.put("dbPort", "自动识别处理");
+
+
+
+
+    }
+
+
+    /**
+     * 数据列表管理
+     */
+    @Test
+    public void TableListTets() {
+        String TableListUrl = "http://10.58.10.48:8080//data/manage/tableList?loginName=lei.li";
+
+        Map<String, String> dbMap = new HashMap<>();
+        dbMap.put("tableName", "t_data");
+        dbMap.put("curPage", "1");
+        dbMap.put("pageSize", "10");
+
+//      String DataJson = JSON.toJSONString(dbMap);
+//      log.info(DataJson);
+
+        String resp = null;
+        try {
+//            resp = httpRequestUtil.doPost(PreviewUrl, DataJson);
+            resp = httpRequestUtil.doGet(TableListUrl, dbMap);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(resp);
+
+
+        JSONObject jsonObject = JSON.parseObject(resp);
+        String success = jsonObject.getString("success");
+
+        String data = jsonObject.getString("data");
+        JSONObject dataObject = JSON.parseObject(jsonObject.getString("data"));
+
+        String curPage = dataObject.getString("curPage");
+        String pageSize = dataObject.getString("pageSize");
+
+        //返回值校验
+        Assert.assertEquals("true", success);
+        Assert.assertEquals("1", curPage);
+        Assert.assertEquals("10", pageSize);
 
     }
 
