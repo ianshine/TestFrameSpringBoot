@@ -2,6 +2,7 @@ package com.springBoot.TestFrame.machineLearning;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.springBoot.TestFrame.util.ReplaceString;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Assert;
@@ -136,16 +137,19 @@ public class LocalFileUpload extends BaseCase {
      */
     @Test
     public void DbPreviewTest() {
+
+        ReplaceString replaceString = new ReplaceString();
         String dbPreviewUrl = "http://10.58.10.48:8080/data/manage/dbPreview?loginName=lei.li";
 
         Map<String, String> dbMap = new HashMap<>();
         dbMap.put("host", "10.57.17.233");
         dbMap.put("port", "3306");
+        dbMap.put("dbName", "turing");
         dbMap.put("userName", "turing");
         dbMap.put("password", "turing123");
         dbMap.put("tableName", "t_data");
-        dbMap.put("version", "5.7.19");
-        dbMap.put("type", "MySQL");
+        dbMap.put("version", "5.7");
+        dbMap.put("type", "mysql");
         dbMap.put("encoding", "utf8");
         dbMap.put("previewLines", "1");
 
@@ -160,6 +164,53 @@ public class LocalFileUpload extends BaseCase {
             e.printStackTrace();
         }
         System.out.println(resp);
+
+        JSONObject jsonObject = JSON.parseObject(resp);
+        String msg = jsonObject.getString("msg");
+        int status = Integer.parseInt(jsonObject.getString("status"));
+
+        String preview = jsonObject.getString("preview");
+
+        System.out.println(preview);
+
+//
+//        String removeStr = "[[";
+//        String newPreview = preview.replace(removeStr,"");
+//
+//        String removeStr01 = "]]";
+//        String newPreview01 = newPreview.replace(removeStr01,"");
+//
+//        System.out.println("0="+newPreview);
+//        System.out.println("1="+newPreview01);
+
+
+
+        String[] arr ={"[[","]]","\"",};
+        String[] data =replaceString.StrReplace(arr,preview,",");
+        System.out.println(data);
+
+//        String DateTest = null;
+//        DateTest = preview;
+//
+//        for (int i = 0; i <arr.length ; i++) {
+//
+//            String newPreview03 = DateTest.replace(arr[i],"");
+//            DateTest = newPreview03;
+//
+//        }
+//
+//        System.out.println("test="+DateTest);
+//
+//        String[] SplitData = DateTest.split(",");
+//
+        for (String dataTest : data) {
+            System.out.println(dataTest);
+        }
+
+
+        //返回值校验
+        Assert.assertEquals(msg, "预览数据查询成功");
+        Assert.assertEquals(status, 200);
 
     }
 
@@ -236,7 +287,7 @@ public class LocalFileUpload extends BaseCase {
      */
     @Test
     public void TableListTets() {
-        String TableListUrl = "http://10.58.10.48:8080//data/manage/tableList?loginName=lei.li";
+        String TableListUrl = "http://10.58.10.48:8080/data/manage/tableList?loginName=lei.li";
 
         Map<String, String> dbMap = new HashMap<>();
         dbMap.put("tableName", "t_data");
@@ -269,6 +320,33 @@ public class LocalFileUpload extends BaseCase {
         Assert.assertEquals("true", success);
         Assert.assertEquals("1", curPage);
         Assert.assertEquals("10", pageSize);
+
+    }
+
+    /**
+     * 上传日志查看
+     */
+    @Test
+    public void ShowLogTest() {
+        String ShowLogUrl = "http://10.58.10.48:8080/data/manage/showLog?loginName=lei.li";
+
+        Map<String, String> dbMap = new HashMap<>();
+        dbMap.put("message", "opLogQuerySuccess");
+        dbMap.put("data", "");
+
+//      String DataJson = JSON.toJSONString(dbMap);
+//      log.info(DataJson);
+
+        String resp = null;
+        try {
+//            resp = httpRequestUtil.doPost(PreviewUrl, DataJson);
+            resp = httpRequestUtil.doGet(ShowLogUrl, dbMap);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(resp);
+
+
 
     }
 
