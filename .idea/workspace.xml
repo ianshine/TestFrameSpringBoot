@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deeb63c7-7c08-4d77-9cac-2f2ae1b4d638" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpUtil/HttpRequestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpUtil/HttpRequestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/ReplaceString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/ReplaceString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java" afterDir="false" />
     </list>
@@ -41,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LocalFileUpload.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LocalFileUpload.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="271" column="38" selection-start-line="271" selection-start-column="38" selection-end-line="271" selection-end-column="38" />
+            <state relative-caret-position="406">
+              <caret line="347" column="41" selection-start-line="347" selection-start-column="41" selection-end-line="347" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,8 +55,8 @@
       <file leaf-file-name="ReplaceString.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/ReplaceString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            <state relative-caret-position="399">
+              <caret line="21" selection-start-line="21" selection-start-column="2" selection-end-line="25" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -65,16 +64,16 @@
       <file leaf-file-name="test-address.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/test-address.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="114">
+              <caret line="6" column="8" selection-start-line="6" selection-end-line="6" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpRequestUtil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HttpRequestUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpUtil/HttpRequestUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
+            <state relative-caret-position="253">
               <caret line="281" column="46" lean-forward="true" selection-start-line="281" selection-start-column="46" selection-end-line="281" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -169,8 +168,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/test-address.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/dataSource/InsertRecordInDatabaseWithJdbcTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/dataSource/MachinelearningJdbcTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/ReplaceString.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpUtil/HttpRequestUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/ReplaceString.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java" />
       </list>
     </option>
@@ -386,7 +385,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LocalFileUpload.DataSaveTest">
+  <component name="RunManager" selected="JUnit.LocalFileUpload.TablePreview">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -562,8 +561,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LocalFileUpload.DataSaveTest" />
         <item itemvalue="JUnit.LocalFileUpload.TablePreview" />
+        <item itemvalue="JUnit.LocalFileUpload.DataSaveTest" />
         <item itemvalue="JUnit.LocalFileUpload.ShowLogTest" />
         <item itemvalue="JUnit.LocalFileUpload.TableListTets" />
         <item itemvalue="JUnit.LocalFileUpload.PreviewTest" />
@@ -585,44 +584,44 @@
       <workItem from="1530528061386" duration="2503000" />
       <workItem from="1532399279552" duration="8084000" />
       <workItem from="1533102957275" duration="1521000" />
-      <workItem from="1533522091223" duration="27245000" />
+      <workItem from="1533522091223" duration="30503000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LocalFileUpload_DataSaveTest - 2018.08.07 at 19h 43m 18s.xml">
+    <history-entry file="LocalFileUpload_TablePreview - 2018.08.07 at 20h 22m 46s.xml">
+      <configuration name="LocalFileUpload.TablePreview" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocalFileUpload_DataSaveTest - 2018.08.07 at 20h 27m 47s.xml">
       <configuration name="LocalFileUpload.DataSaveTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LocalFileUpload_DataSaveTest - 2018.08.07 at 19h 44m 07s.xml">
+    <history-entry file="LocalFileUpload_DataSaveTest - 2018.08.07 at 20h 28m 41s.xml">
       <configuration name="LocalFileUpload.DataSaveTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LocalFileUpload_DataSaveTest - 2018.08.07 at 19h 44m 19s.xml">
+    <history-entry file="LocalFileUpload_DataSaveTest - 2018.08.07 at 20h 29m 50s.xml">
       <configuration name="LocalFileUpload.DataSaveTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LocalFileUpload_DataSaveTest - 2018.08.07 at 19h 45m 16s.xml">
-      <configuration name="LocalFileUpload.DataSaveTest" configurationId="JUnit" />
+    <history-entry file="LocalFileUpload_TablePreview - 2018.08.07 at 20h 31m 47s.xml">
+      <configuration name="LocalFileUpload.TablePreview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LocalFileUpload_DataSaveTest - 2018.08.07 at 19h 48m 46s.xml">
-      <configuration name="LocalFileUpload.DataSaveTest" configurationId="JUnit" />
+    <history-entry file="LocalFileUpload_TablePreview - 2018.08.07 at 20h 33m 05s.xml">
+      <configuration name="LocalFileUpload.TablePreview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LocalFileUpload_DataSaveTest - 2018.08.07 at 19h 49m 17s.xml">
-      <configuration name="LocalFileUpload.DataSaveTest" configurationId="JUnit" />
+    <history-entry file="LocalFileUpload_TablePreview - 2018.08.07 at 20h 49m 51s.xml">
+      <configuration name="LocalFileUpload.TablePreview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LocalFileUpload_DataSaveTest - 2018.08.07 at 19h 50m 44s.xml">
-      <configuration name="LocalFileUpload.DataSaveTest" configurationId="JUnit" />
+    <history-entry file="LocalFileUpload_TablePreview - 2018.08.07 at 20h 50m 29s.xml">
+      <configuration name="LocalFileUpload.TablePreview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LocalFileUpload_DataSaveTest - 2018.08.07 at 19h 51m 33s.xml">
-      <configuration name="LocalFileUpload.DataSaveTest" configurationId="JUnit" />
+    <history-entry file="LocalFileUpload_TablePreview - 2018.08.07 at 20h 50m 56s.xml">
+      <configuration name="LocalFileUpload.TablePreview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LocalFileUpload_DataSaveTest - 2018.08.07 at 19h 52m 46s.xml">
-      <configuration name="LocalFileUpload.DataSaveTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LocalFileUpload_DataSaveTest - 2018.08.07 at 19h 53m 07s.xml">
+    <history-entry file="LocalFileUpload_DataSaveTest - 2018.08.07 at 20h 51m 30s.xml">
       <configuration name="LocalFileUpload.DataSaveTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98148000" />
+    <option name="totallyTimeSpent" value="101406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-155" width="1920" height="1200" extended-state="0" />
@@ -1020,40 +1019,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/ReplaceString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/dataFile/creditCARD_Mac.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpUtil/HttpRequestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="281" column="46" lean-forward="true" selection-start-line="281" selection-start-column="46" selection-end-line="281" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9772#9787#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/test-address.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="114">
+          <caret line="6" column="8" selection-start-line="6" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/ReplaceString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-start-column="2" selection-end-line="25" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="271" column="38" selection-start-line="271" selection-start-column="38" selection-end-line="271" selection-end-column="38" />
+        <state relative-caret-position="406">
+          <caret line="347" column="41" selection-start-line="347" selection-start-column="41" selection-end-line="347" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/httpUtil/HttpRequestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="281" column="46" lean-forward="true" selection-start-line="281" selection-start-column="46" selection-end-line="281" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9772#9787#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -172,6 +172,7 @@ public class LocalFileUpload extends BaseCase {
         String preview = jsonObject.getString("preview");
         System.out.println(preview);
 
+        //解析json里的previe字段
         String[] arr ={"[[","]]","\"",};
         String[] data =replaceString.StrReplace(arr,preview,",");
 
@@ -234,7 +235,9 @@ public class LocalFileUpload extends BaseCase {
     @Test
     public void DataSaveTest() {
         //配置文件地址
-        String FileUploadUrl = GetAdd("LocalFileUpload");
+        String FileUploadUrl = GetAdd("filePath");
+        int name = (int)(Math.random() * 10000);
+        System.out.println("name====test_"+name);
 
         String SaveUrl = "http://10.58.10.48:8080/data/manage/save?loginName=lei.li";
         String meta = "[{'name':'id','type':'bigint'},{'name':'limit_bal','type':'bigint'},{'name':'sex','type':'bigint'},{'name':'education','type':'bigint'},{'name':'marriage','type':'bigint'},{'name':'age','type':'bigint'},{'name':'pay_0','type':'bigint'},{'name':'pay_2','type':'bigint'},{'name':'pay_3','type':'bigint'},{'name':'pay_4','type':'bigint'},{'name':'pay_5','type':'bigint'},{'name':'pay_6','type':'bigint'},{'name':'bill_amt1','type':'bigint'},{'name':'bill_amt2','type':'bigint'},{'name':'bill_amt3','type':'bigint'},{'name':'bill_amt4','type':'bigint'},{'name':'bill_amt5','type':'bigint'},{'name':'bill_amt6','type':'bigint'},{'name':'pay_amt1','type':'bigint'},{'name':'pay_amt2','type':'bigint'},{'name':'pay_amt3','type':'bigint'},{'name':'pay_amt4','type':'bigint'},{'name':'pay_amt5','type':'bigint'},{'name':'pay_amt6','type':'bigint'},{'name':'next_month','type':'bigint'}]";
@@ -242,10 +245,10 @@ public class LocalFileUpload extends BaseCase {
         List list = JSONObject.parseObject(meta, List.class);
 
         Map<String, Object> dbMap = new HashMap<>();
-        dbMap.put("name", "test11_1112");//hive表名称
+        dbMap.put("name", "test_"+name);//hive表名称
         dbMap.put("targetFormat", "parquet");//存入hive的文件格式
         dbMap.put("protocol", "LOCAL");//数据上传方式:LOCAL（本地），HDFS（HDFS），DATABASE(数据库)
-        dbMap.put("uri", FileUploadUrl);
+        dbMap.put("uri", "hdfs://tdhdfs/user/turing/data/lei.li/data_temp/u-965d45e9-dfc1-4b01-8e69-cd896fd6f72f-creditCARD_Mac.csv");
         dbMap.put("meta", JSONObject.toJSONString(list));
         dbMap.put("format", "csv");
         dbMap.put("firstLineSchema", "false");//首行是否是字段名
@@ -264,8 +267,8 @@ public class LocalFileUpload extends BaseCase {
         dbMap.put("dbType", "UTF-8");
         dbMap.put("dbPort", "3306");
 
-//        String DataJson = JSON.toJSONString(dbMap);
-//        log.info("DataJson========"+DataJson);
+        String DataJson = JSON.toJSONString(dbMap);
+        log.info("DataJson========"+DataJson);
 
         String resp = null;
         try {
@@ -274,6 +277,17 @@ public class LocalFileUpload extends BaseCase {
             e.printStackTrace();
         }
         System.out.println(resp);
+
+        JSONObject jsonObject = JSON.parseObject(resp);
+        String msg = jsonObject.getString("msg");
+        String status = jsonObject.getString("status");
+
+        String preview = jsonObject.getString("preview");
+        System.out.println(preview);
+
+        //返回值校验
+        Assert.assertEquals(msg, "任务提交成功");
+        Assert.assertEquals(status, "200");
 
 
     }
@@ -325,10 +339,13 @@ public class LocalFileUpload extends BaseCase {
      */
     @Test
     public void TablePreview() {
+
+        ReplaceString replaceString = new ReplaceString();
+
         String TableListUrl = "http://10.58.10.48:8080/data/manage/tablePreview?loginName=lei.li";
 
         Map<String, String> dbMap = new HashMap<>();
-        dbMap.put("tableName", "t_data");
+        dbMap.put("tableName", "test_2764");
 
         String resp = null;
         try {
@@ -338,6 +355,24 @@ public class LocalFileUpload extends BaseCase {
             e.printStackTrace();
         }
         System.out.println(resp);
+
+        JSONObject jsonObject = JSON.parseObject(resp);
+        String success = jsonObject.getString("success");
+
+//        String preview = jsonObject.getString("data");
+//        System.out.println(preview);
+
+//        String data = jsonObject.getString("data");
+        JSONObject dataObject = JSON.parseObject(jsonObject.getString("data"));
+        String preview = dataObject.getString("preview");
+
+        //解析json里的previe字段
+        String[] arr ={"[[","]]","\"","[","]"};
+        String[] data =replaceString.StrReplace(arr,preview,",");
+
+        //返回值校验
+        Assert.assertEquals(success, "true");
+        Assert.assertEquals("20000", data[26]);
     }
 
     /**

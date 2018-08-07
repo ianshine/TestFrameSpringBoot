@@ -20,7 +20,7 @@ public class ReplaceString {
         String[] SplitData = DateTest.split(Symbol);
 
 //        System.out.println("NewDateTest = "+DateTest);
-//        遍历所有字符
+//        //遍历所有字符
 //        for (String data : SplitData) {
 //            System.out.println(data);
 //        }
