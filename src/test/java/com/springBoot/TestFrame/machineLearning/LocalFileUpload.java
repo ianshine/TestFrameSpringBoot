@@ -159,7 +159,6 @@ public class LocalFileUpload extends BaseCase {
         String resp = null;
         try {
             resp = httpRequestUtil.doGet(dbPreviewUrl, dbMap);
-//            resp = httpRequestUtil.sendPost(dbPreviewUrl,DataJson);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -170,47 +169,19 @@ public class LocalFileUpload extends BaseCase {
         int status = Integer.parseInt(jsonObject.getString("status"));
 
         String preview = jsonObject.getString("preview");
-
         System.out.println(preview);
-
-//
-//        String removeStr = "[[";
-//        String newPreview = preview.replace(removeStr,"");
-//
-//        String removeStr01 = "]]";
-//        String newPreview01 = newPreview.replace(removeStr01,"");
-//
-//        System.out.println("0="+newPreview);
-//        System.out.println("1="+newPreview01);
-
-
 
         String[] arr ={"[[","]]","\"",};
         String[] data =replaceString.StrReplace(arr,preview,",");
-        System.out.println(data);
 
-//        String DateTest = null;
-//        DateTest = preview;
-//
-//        for (int i = 0; i <arr.length ; i++) {
-//
-//            String newPreview03 = DateTest.replace(arr[i],"");
-//            DateTest = newPreview03;
-//
-//        }
-//
-//        System.out.println("test="+DateTest);
-//
-//        String[] SplitData = DateTest.split(",");
-//
         for (String dataTest : data) {
             System.out.println(dataTest);
         }
 
-
         //返回值校验
         Assert.assertEquals(msg, "预览数据查询成功");
         Assert.assertEquals(status, 200);
+        Assert.assertEquals("data_test3", data[1]);
 
     }
 

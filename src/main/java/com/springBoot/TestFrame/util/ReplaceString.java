@@ -6,7 +6,7 @@ public class ReplaceString {
      * @param arr  : 字符串需要替换的特殊字符串数组
      * @param ReplacedStr 需要替换的字符串
      * @param Symbol 特殊字符替换后按什么符号分隔成数组
-     * @return
+     * @return   返回一个字符串数组
      */
 
     public String[] StrReplace(String[] arr, String ReplacedStr, String Symbol) {
@@ -14,11 +14,11 @@ public class ReplaceString {
         DateTest = ReplacedStr;
 
         for (int i = 0; i <arr.length ; i++) {
-            String newPreview03 = DateTest.replace(arr[i],"");
-            DateTest = newPreview03;
+            String NewDateTest = DateTest.replace(arr[i],"");
+            DateTest = NewDateTest;
         }
 
-        System.out.println("test="+DateTest);
+        System.out.println("NewDateTest = "+DateTest);
 
         String[] SplitData = DateTest.split(Symbol);
 

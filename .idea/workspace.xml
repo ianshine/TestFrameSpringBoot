@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deeb63c7-7c08-4d77-9cac-2f2ae1b4d638" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/ReplaceString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/ReplaceString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/ReplaceString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/springBoot/TestFrame/machineLearning/LocalFileUpload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/springBoot/TestFrame/machineLearning/LocalFileUpload.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +43,8 @@
       <file leaf-file-name="LocalFileUpload.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="205" column="38" lean-forward="true" selection-start-line="205" selection-start-column="38" selection-end-line="205" selection-end-column="38" />
+            <state relative-caret-position="535">
+              <caret line="183" column="48" selection-start-line="183" selection-start-column="48" selection-end-line="183" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,8 +55,8 @@
       <file leaf-file-name="ReplaceString.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/ReplaceString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="152">
+              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -595,23 +593,11 @@
       <workItem from="1530528061386" duration="2503000" />
       <workItem from="1532399279552" duration="8084000" />
       <workItem from="1533102957275" duration="1521000" />
-      <workItem from="1533522091223" duration="19084000" />
+      <workItem from="1533522091223" duration="19825000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LocalFileUpload_DbPreviewTest - 2018.08.07 at 16h 36m 37s.xml">
-      <configuration name="LocalFileUpload.DbPreviewTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LocalFileUpload_DbPreviewTest - 2018.08.07 at 16h 37m 49s.xml">
-      <configuration name="LocalFileUpload.DbPreviewTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LocalFileUpload_DbPreviewTest - 2018.08.07 at 16h 38m 37s.xml">
-      <configuration name="LocalFileUpload.DbPreviewTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LocalFileUpload_DbPreviewTest - 2018.08.07 at 16h 39m 18s.xml">
-      <configuration name="LocalFileUpload.DbPreviewTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LocalFileUpload_DbPreviewTest - 2018.08.07 at 16h 52m 55s.xml">
       <configuration name="LocalFileUpload.DbPreviewTest" configurationId="JUnit" />
     </history-entry>
@@ -630,9 +616,21 @@
     <history-entry file="LocalFileUpload_DbPreviewTest - 2018.08.07 at 17h 12m 59s.xml">
       <configuration name="LocalFileUpload.DbPreviewTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LocalFileUpload_DbPreviewTest - 2018.08.07 at 17h 32m 57s.xml">
+      <configuration name="LocalFileUpload.DbPreviewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocalFileUpload_DbPreviewTest - 2018.08.07 at 17h 37m 22s.xml">
+      <configuration name="LocalFileUpload.DbPreviewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocalFileUpload_DbPreviewTest - 2018.08.07 at 17h 38m 18s.xml">
+      <configuration name="LocalFileUpload.DbPreviewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocalFileUpload_DbPreviewTest - 2018.08.07 at 17h 45m 53s.xml">
+      <configuration name="LocalFileUpload.DbPreviewTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89987000" />
+    <option name="totallyTimeSpent" value="90728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-155" width="1920" height="1200" extended-state="0" />
@@ -655,11 +653,11 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32533333" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32533333" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.28242424" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19861555" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19861555" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297568" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -1050,15 +1048,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springBoot/TestFrame/util/ReplaceString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="152">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/springBoot/TestFrame/machineLearning/LocalFileUpload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="205" column="38" lean-forward="true" selection-start-line="205" selection-start-column="38" selection-end-line="205" selection-end-column="38" />
+        <state relative-caret-position="535">
+          <caret line="183" column="48" selection-start-line="183" selection-start-column="48" selection-end-line="183" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
