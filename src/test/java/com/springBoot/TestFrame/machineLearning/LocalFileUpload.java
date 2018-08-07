@@ -9,6 +9,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class LocalFileUpload extends BaseCase {
@@ -162,7 +163,7 @@ public class LocalFileUpload extends BaseCase {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println(resp);
+//        System.out.println(resp);
 
         JSONObject jsonObject = JSON.parseObject(resp);
         String msg = jsonObject.getString("msg");
@@ -173,10 +174,6 @@ public class LocalFileUpload extends BaseCase {
 
         String[] arr ={"[[","]]","\"",};
         String[] data =replaceString.StrReplace(arr,preview,",");
-
-        for (String dataTest : data) {
-            System.out.println(dataTest);
-        }
 
         //返回值校验
         Assert.assertEquals(msg, "预览数据查询成功");
@@ -190,6 +187,8 @@ public class LocalFileUpload extends BaseCase {
      */
     @Test
     public void PreviewTest() {
+        ReplaceString replaceString = new ReplaceString();
+
         String PreviewUrl = "http://10.58.10.48:8080/data/manage/preview?loginName=lei.li";
 
         Map<String, String> dbMap = new HashMap<>();
@@ -198,22 +197,33 @@ public class LocalFileUpload extends BaseCase {
         dbMap.put("firstLineSchema", "true");
         dbMap.put("format", "csv");
         dbMap.put("lineNumbers", "1");
-        dbMap.put("path", "");//上传文件HDFS缓存路径，即上传文件的时候返回值path
+        dbMap.put("path", "hdfs://tdhdfs/user/turing/data/lei.li/data_temp/u-965d45e9-dfc1-4b01-8e69-cd896fd6f72f-creditCARD_Mac.csv");//上传文件HDFS缓存路径，即上传文件的时候返回值path
         dbMap.put("protocol", "LOCAL");//上传方式，LOCAL（本地），HDFS（HDFS）,DATABASE(数据库)
         dbMap.put("randomPreview", "false");
         dbMap.put("rowDelimiter", "自动识别处理");
 
-//        String DataJson = JSON.toJSONString(dbMap);
-//        log.info(DataJson);
 
         String resp = null;
         try {
-//            resp = httpRequestUtil.doPost(PreviewUrl, DataJson);
             resp = httpRequestUtil.doGet(PreviewUrl, dbMap);
         } catch (Exception e) {
             e.printStackTrace();
         }
         System.out.println(resp);
+
+        JSONObject jsonObject = JSON.parseObject(resp);
+        int status = Integer.parseInt(jsonObject.getString("status"));
+
+        String preview = jsonObject.getString("preview");
+        System.out.println(preview);
+
+        String[] arr ={"[[","]]","\"",};
+        String[] data =replaceString.StrReplace(arr,preview,",");
+
+        //返回值校验
+        Assert.assertEquals(status, 200);
+        Assert.assertEquals("20000", data[1]);
+
 
 
     }
@@ -221,33 +231,49 @@ public class LocalFileUpload extends BaseCase {
     /**
      * 数据保存
      */
+    @Test
     public void DataSaveTest() {
-        String SaveUrl = "http://10.58.10.48:8080/data/manage/save?loginName=lei.li";
+        //配置文件地址
+        String FileUploadUrl = GetAdd("LocalFileUpload");
 
-        Map<String, String> dbMap = new HashMap<>();
-        dbMap.put("name", "");//hive表名称
+        String SaveUrl = "http://10.58.10.48:8080/data/manage/save?loginName=lei.li";
+        String meta = "[{'name':'id','type':'bigint'},{'name':'limit_bal','type':'bigint'},{'name':'sex','type':'bigint'},{'name':'education','type':'bigint'},{'name':'marriage','type':'bigint'},{'name':'age','type':'bigint'},{'name':'pay_0','type':'bigint'},{'name':'pay_2','type':'bigint'},{'name':'pay_3','type':'bigint'},{'name':'pay_4','type':'bigint'},{'name':'pay_5','type':'bigint'},{'name':'pay_6','type':'bigint'},{'name':'bill_amt1','type':'bigint'},{'name':'bill_amt2','type':'bigint'},{'name':'bill_amt3','type':'bigint'},{'name':'bill_amt4','type':'bigint'},{'name':'bill_amt5','type':'bigint'},{'name':'bill_amt6','type':'bigint'},{'name':'pay_amt1','type':'bigint'},{'name':'pay_amt2','type':'bigint'},{'name':'pay_amt3','type':'bigint'},{'name':'pay_amt4','type':'bigint'},{'name':'pay_amt5','type':'bigint'},{'name':'pay_amt6','type':'bigint'},{'name':'next_month','type':'bigint'}]";
+
+        List list = JSONObject.parseObject(meta, List.class);
+
+        Map<String, Object> dbMap = new HashMap<>();
+        dbMap.put("name", "test11_1112");//hive表名称
         dbMap.put("targetFormat", "parquet");//存入hive的文件格式
-        dbMap.put("protocol", "LOCAL");//数据上传方式。LOCAL（本地），HDFS（HDFS），DATABASE(数据库)
-        dbMap.put("uri", "");
-        dbMap.put("meta", "");
+        dbMap.put("protocol", "LOCAL");//数据上传方式:LOCAL（本地），HDFS（HDFS），DATABASE(数据库)
+        dbMap.put("uri", FileUploadUrl);
+        dbMap.put("meta", JSONObject.toJSONString(list));
         dbMap.put("format", "csv");
         dbMap.put("firstLineSchema", "false");//首行是否是字段名
         dbMap.put("colDelimiter", "0x2C");
-        dbMap.put("dbTable", "自动识别处理");
+        dbMap.put("dbTable", "");
         dbMap.put("format", "csv");
-        dbMap.put("columnTypeCheck", "");//列类型检查PERMISSIVE（设置为null），DROPMALFORMED（抛掉异常行），FAILFAST（引入失败）
+        dbMap.put("columnTypeCheck", "PERMISSIVE");//列类型检查PERMISSIVE（设置为null），DROPMALFORMED（抛掉异常行），FAILFAST（引入失败）
         dbMap.put("rowDelimiter", "自动识别处理");
-        dbMap.put("password", "自动识别处理");
-        dbMap.put("dbHost", "自动识别处理");
-        dbMap.put("dbName", "自动识别处理");
+        dbMap.put("password", "turing123");
+        dbMap.put("dbHost", "10.57.17.233");
+        dbMap.put("dbName", "turing");
         dbMap.put("sqlStatement", "");
-        dbMap.put("columnLengthCheck", "");//列长度检查DROPMALFORMED（抛掉异常行），FAILFAST（引入失败）
-        dbMap.put("encoding", "自动识别处理");
-        dbMap.put("userName", "自动识别处理");
+        dbMap.put("columnLengthCheck", "DROPMALFORMED");//列长度检查DROPMALFORMED（抛掉异常行），FAILFAST（引入失败）
+        dbMap.put("encoding", "UTF-8");
+        dbMap.put("userName", "turing");
         dbMap.put("dbType", "UTF-8");
-        dbMap.put("dbPort", "自动识别处理");
+        dbMap.put("dbPort", "3306");
 
+//        String DataJson = JSON.toJSONString(dbMap);
+//        log.info("DataJson========"+DataJson);
 
+        String resp = null;
+        try {
+            resp = httpRequestUtil.doPost(SaveUrl, dbMap);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(resp);
 
 
     }
@@ -295,6 +321,26 @@ public class LocalFileUpload extends BaseCase {
     }
 
     /**
+     * table数据预览
+     */
+    @Test
+    public void TablePreview() {
+        String TableListUrl = "http://10.58.10.48:8080/data/manage/tablePreview?loginName=lei.li";
+
+        Map<String, String> dbMap = new HashMap<>();
+        dbMap.put("tableName", "t_data");
+
+        String resp = null;
+        try {
+//            resp = httpRequestUtil.doPost(PreviewUrl, DataJson);
+            resp = httpRequestUtil.doGet(TableListUrl, dbMap);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(resp);
+    }
+
+    /**
      * 上传日志查看
      */
     @Test
@@ -302,8 +348,7 @@ public class LocalFileUpload extends BaseCase {
         String ShowLogUrl = "http://10.58.10.48:8080/data/manage/showLog?loginName=lei.li";
 
         Map<String, String> dbMap = new HashMap<>();
-        dbMap.put("message", "opLogQuerySuccess");
-        dbMap.put("data", "");
+        dbMap.put("operatorId", "8661");
 
 //      String DataJson = JSON.toJSONString(dbMap);
 //      log.info(DataJson);
@@ -317,7 +362,15 @@ public class LocalFileUpload extends BaseCase {
         }
         System.out.println(resp);
 
+        JSONObject jsonObject = JSON.parseObject(resp);
+        String status = jsonObject.getString("status");
+        String success = jsonObject.getString("success");
+        String message = jsonObject.getString("message");
 
+        //返回值校验
+        Assert.assertEquals(status, "200");
+        Assert.assertEquals(success, "true");
+        Assert.assertEquals(message, "opLogQuerySuccess");
 
     }
 
