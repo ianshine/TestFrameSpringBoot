@@ -60,7 +60,7 @@
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 
-		<!---->
+		<!--引入JdbcTemplate的依赖包-->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>

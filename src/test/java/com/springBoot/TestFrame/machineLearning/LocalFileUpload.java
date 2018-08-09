@@ -305,12 +305,12 @@ public class LocalFileUpload extends BaseCase {
         dbMap.put("curPage", "1");
         dbMap.put("pageSize", "10");
 
-//      String DataJson = JSON.toJSONString(dbMap);
-//      log.info(DataJson);
+      String DataJson = JSON.toJSONString(dbMap);
+      log.info(DataJson);
 
         String resp = null;
         try {
-//            resp = httpRequestUtil.doPost(PreviewUrl, DataJson);
+//            resp = httpRequestUtil.doPost(TableListUrl, dbMap);
             resp = httpRequestUtil.doGet(TableListUrl, dbMap);
         } catch (Exception e) {
             e.printStackTrace();
@@ -345,7 +345,8 @@ public class LocalFileUpload extends BaseCase {
         String TableListUrl = "http://10.58.10.48:8080/data/manage/tablePreview?loginName=lei.li";
 
         Map<String, String> dbMap = new HashMap<>();
-        dbMap.put("tableName", "test_2764");
+//        dbMap.put("tableName", "test_2764");
+        dbMap.put("tableName", "test_5481");
 
         String resp = null;
         try {
@@ -406,6 +407,27 @@ public class LocalFileUpload extends BaseCase {
         Assert.assertEquals(status, "200");
         Assert.assertEquals(success, "true");
         Assert.assertEquals(message, "opLogQuerySuccess");
+
+    }
+
+    @Test
+    public void deleteData() {
+        String deleteDataUrl = "http://10.58.10.48:8080/data/manage/TableDelete?loginName=lei.li";
+
+        Map<String, String> dbMap = new HashMap<>();
+        dbMap.put("operatorId", "test_6194");
+
+//      String DataJson = JSON.toJSONString(dbMap);
+//      log.info(DataJson);
+
+        String resp = null;
+        try {
+//            resp = httpRequestUtil.doPost(deleteDataUrl, dbMap);
+            resp = httpRequestUtil.doGet(deleteDataUrl, dbMap);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(resp);
 
     }
 

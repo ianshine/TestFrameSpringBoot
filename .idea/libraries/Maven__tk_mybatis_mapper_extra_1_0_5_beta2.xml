@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: tk.mybatis:mapper-extra:1.0.5-beta2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-extra/1.0.5-beta2/mapper-extra-1.0.5-beta2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-extra/1.0.5-beta2/mapper-extra-1.0.5-beta2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper-extra/1.0.5-beta2/mapper-extra-1.0.5-beta2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
