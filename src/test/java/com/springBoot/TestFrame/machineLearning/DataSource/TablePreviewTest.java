@@ -2,7 +2,6 @@ package com.springBoot.TestFrame.machineLearning.DataSource;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.springBoot.TestFrame.machineLearning.DataPreviewTest;
 import com.springBoot.TestFrame.util.ReplaceString;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -15,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 public class TablePreviewTest extends DataSourceBaseCase{
-    private static final Log log = LogFactory.getLog(DataPreviewTest.class);
+    private static final Log log = LogFactory.getLog(TablePreviewTest.class);
     ReplaceString replaceString = new ReplaceString();
     //请求地址
     String TablePreviewUrl = GetAdd("TablePreview")+GetAdd("UserNamelilei");

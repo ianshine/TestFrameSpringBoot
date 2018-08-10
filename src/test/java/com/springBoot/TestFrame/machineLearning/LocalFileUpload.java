@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 public class LocalFileUpload extends BaseCase {
-    private static final Log log = LogFactory.getLog(DataPreviewTest.class);
+    private static final Log log = LogFactory.getLog(LocalFileUpload.class);
     String GenerationPath = null;
 
 

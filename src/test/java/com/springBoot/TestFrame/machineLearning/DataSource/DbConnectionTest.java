@@ -2,7 +2,6 @@ package com.springBoot.TestFrame.machineLearning.DataSource;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.springBoot.TestFrame.machineLearning.DataPreviewTest;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Assert;
@@ -12,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DbConnectionTest extends DataSourceBaseCase{
-    private static final Log log = LogFactory.getLog(DataPreviewTest.class);
+    private static final Log log = LogFactory.getLog(DbConnectionTest.class);
     //请求地址
     String DbConnectionUrl = GetAdd("DbConnection")+GetAdd("UserNamelilei");
 

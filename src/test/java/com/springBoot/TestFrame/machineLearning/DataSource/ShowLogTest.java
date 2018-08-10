@@ -2,7 +2,6 @@ package com.springBoot.TestFrame.machineLearning.DataSource;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.springBoot.TestFrame.machineLearning.DataPreviewTest;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.After;
@@ -14,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 public class ShowLogTest extends DataSourceBaseCase{
-    private static final Log log = LogFactory.getLog(DataPreviewTest.class);
+    private static final Log log = LogFactory.getLog(ShowLogTest.class);
     //请求地址
     String ShowLogUrl = GetAdd("ShowLog")+GetAdd("UserNamelilei");
     String SaveUrl = GetAdd("SaveUrl")+GetAdd("UserNamelilei");
