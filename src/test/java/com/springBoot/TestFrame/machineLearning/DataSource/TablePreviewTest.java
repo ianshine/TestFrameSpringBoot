@@ -6,6 +6,7 @@ import com.springBoot.TestFrame.machineLearning.DataPreviewTest;
 import com.springBoot.TestFrame.util.ReplaceString;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -20,6 +21,8 @@ public class TablePreviewTest extends DataSourceBaseCase{
     String TablePreviewUrl = GetAdd("TablePreview")+GetAdd("UserNamelilei");
     String SaveUrl = GetAdd("SaveUrl")+GetAdd("UserNamelilei");
 
+    int name;
+
     /**
      * tablePreview数据预览
      * @throws Exception
@@ -27,7 +30,7 @@ public class TablePreviewTest extends DataSourceBaseCase{
     @Test
     public void TablePreviewTest() throws Exception {
         //文件名称
-        int name = (int)(Math.random() * 10000);
+        name = (int)(Math.random() * 10000);
         log.info("name====test_"+name);
         //meta字段准备
         String meta = "[{'name':'id','type':'bigint'},{'name':'limit_bal','type':'bigint'},{'name':'sex','type':'bigint'},{'name':'education','type':'bigint'},{'name':'marriage','type':'bigint'},{'name':'age','type':'bigint'},{'name':'pay_0','type':'bigint'},{'name':'pay_2','type':'bigint'},{'name':'pay_3','type':'bigint'},{'name':'pay_4','type':'bigint'},{'name':'pay_5','type':'bigint'},{'name':'pay_6','type':'bigint'},{'name':'bill_amt1','type':'bigint'},{'name':'bill_amt2','type':'bigint'},{'name':'bill_amt3','type':'bigint'},{'name':'bill_amt4','type':'bigint'},{'name':'bill_amt5','type':'bigint'},{'name':'bill_amt6','type':'bigint'},{'name':'pay_amt1','type':'bigint'},{'name':'pay_amt2','type':'bigint'},{'name':'pay_amt3','type':'bigint'},{'name':'pay_amt4','type':'bigint'},{'name':'pay_amt5','type':'bigint'},{'name':'pay_amt6','type':'bigint'},{'name':'next_month','type':'bigint'}]";
@@ -91,5 +94,14 @@ public class TablePreviewTest extends DataSourceBaseCase{
         //返回值校验
         Assert.assertEquals(success, "true");
         Assert.assertEquals("20000", data[26]);
+    }
+
+    /**
+     * 清除数据,调用删除接口
+     */
+    @After
+    public void delData() {
+        DelSourceDataTest delSourceDataTest = new DelSourceDataTest();
+        delSourceDataTest.delData("test_"+name);
     }
 }

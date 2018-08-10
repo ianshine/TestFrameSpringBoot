@@ -2,11 +2,13 @@ package com.springBoot.TestFrame.machineLearning;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.springBoot.TestFrame.jdbc.JdbcUtil;
 import com.springBoot.TestFrame.util.ReplaceString;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Assert;
 import org.junit.Test;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.HashMap;
 import java.util.List;
@@ -298,7 +300,8 @@ public class LocalFileUpload extends BaseCase {
      */
     @Test
     public void TableListTets() {
-        String TableListUrl = "http://10.58.10.48:8080/data/manage/tableList?loginName=lei.li";
+//        String TableListUrl = "http://10.58.10.48:8080/data/manage/tableList?loginName=lei.li";
+        String TableListUrl = "http://10.57.242.116:8080/data/manage/tableList?loginName=lei.li";
 
         Map<String, String> dbMap = new HashMap<>();
         dbMap.put("tableName", "t_data");
@@ -410,12 +413,15 @@ public class LocalFileUpload extends BaseCase {
 
     }
 
+    /**
+     * 删除
+     */
     @Test
     public void deleteData() {
-        String deleteDataUrl = "http://10.58.10.48:8080/data/manage/TableDelete?loginName=lei.li";
+        String deleteDataUrl = "http://10.58.10.48:8080/data/manage/tableDelete?loginName=lei.li";
 
         Map<String, String> dbMap = new HashMap<>();
-        dbMap.put("operatorId", "test_6194");
+        dbMap.put("tableId", "70");
 
 //      String DataJson = JSON.toJSONString(dbMap);
 //      log.info(DataJson);
@@ -429,6 +435,29 @@ public class LocalFileUpload extends BaseCase {
         }
         System.out.println(resp);
 
+    }
+
+    //根据name找到数据库对应的ID主键
+    @Test
+    public void QueryDataTest() {
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(machinelearningJdbcTemplate.getMachinelearningDataSource());
+
+        String tablename = "t_data_source";
+        Map<String,Object> value = new HashMap<String, Object>();
+        value.put("table_name","test_8073");
+
+        List<Map<String, Object>> result = JdbcUtil.queryData(jdbcTemplate,tablename,value);
+
+//        for (Map<String, Object> map : result) {
+//            for (String s : map.keySet()) {
+//                System.out.print(map.get(s) + "  ");
+//            }
+//        }
+        for (int i = 0; i<result.size(); i++){
+            Map<String,Object> map = result.get(i);
+            int id = Integer.parseInt(map.get("id").toString());
+            System.out.println(id);
+        }
     }
 
 

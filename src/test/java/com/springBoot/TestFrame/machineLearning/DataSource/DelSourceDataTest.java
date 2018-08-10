@@ -2,11 +2,12 @@ package com.springBoot.TestFrame.machineLearning.DataSource;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.springBoot.TestFrame.jdbc.JdbcUtil;
 import com.springBoot.TestFrame.machineLearning.DataPreviewTest;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -14,22 +15,43 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class DataSaveTest extends DataSourceBaseCase{
+public class DelSourceDataTest extends DataSourceBaseCase{
 
     private static final Log log = LogFactory.getLog(DataPreviewTest.class);
     //请求地址
-    String SaveUrl = GetAdd("SaveUrl")+GetAdd("UserNamelilei");
     String tableDeleteUrl = GetAdd("tableDelete")+GetAdd("UserNamelilei");
-
-    int name;
-    String id;
-
     JdbcTemplate jdbcTemplate = new JdbcTemplate(machinelearningJdbcTemplate.getMachinelearningDataSource());
+    String SaveUrl = GetAdd("SaveUrl")+GetAdd("UserNamelilei");
+    String id = null;
+    int name;
+
+    /**
+     * 提供删除数据公共方法，表：t_data_source
+     */
+    public void delData(String name) {
+        String tablename = "t_data_source";
+        Map<String,Object> value = new HashMap<String, Object>();
+        value.put("table_name",name);
+
+        List<Map<String, Object>> result = JdbcUtil.queryData(jdbcTemplate,tablename,value);
+
+        for (int i = 0; i<result.size(); i++){
+            Map<String,Object> map = result.get(i);
+            id = map.get("id").toString();
+            System.out.println("删除id："+id);
+        }
+
+        Map<String, String> dbMap = new HashMap<>();
+        dbMap.put("tableId", id);
+
+        String resp = httpRequestUtil.doGet(tableDeleteUrl, dbMap);
+        log.info(resp);
+    }
 
     /**
      * 数据保存(data/manage/save)
      */
-    @Test
+    @Before
     public void SaveTest() throws Exception {
         //文件名称
         name = (int)(Math.random() * 10000);
@@ -87,10 +109,38 @@ public class DataSaveTest extends DataSourceBaseCase{
     /**
      * 清除数据,调用删除接口
      */
-    @After
+    @Test
     public void delData() {
-        DelSourceDataTest delSourceDataTest = new DelSourceDataTest();
-        delSourceDataTest.delData("test_"+name);
+        String tablename = "t_data_source";
+        Map<String,Object> value = new HashMap<String, Object>();
+        value.put("table_name","test_"+name);
+
+        List<Map<String, Object>> result = JdbcUtil.queryData(jdbcTemplate,tablename,value);
+
+        for (int i = 0; i<result.size(); i++){
+            Map<String,Object> map = result.get(i);
+            id = map.get("id").toString();
+            log.info("删除id："+id);
+        }
+
+        //删除数据
+        Map<String, String> dbMap = new HashMap<>();
+        dbMap.put("tableId", id);
+
+        String resp = httpRequestUtil.doGet(tableDeleteUrl, dbMap);
+        log.info(resp);
+
+        JSONObject jsonObject = JSON.parseObject(resp);
+        int status = Integer.parseInt(jsonObject.getString("status"));
+        String success = jsonObject.getString("success");
+        String message = jsonObject.getString("message");
+
+        //返回值校验
+        Assert.assertEquals(status, 0);
+        Assert.assertEquals(success, "true");
+        Assert.assertEquals(message, "删除成功");
 
     }
+
+
 }

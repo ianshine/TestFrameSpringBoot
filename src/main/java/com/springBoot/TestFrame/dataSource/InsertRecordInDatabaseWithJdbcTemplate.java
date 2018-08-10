@@ -6,7 +6,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 /**
  * JdbcTemplate指定连接操作
@@ -63,16 +65,44 @@ public class InsertRecordInDatabaseWithJdbcTemplate {
 
         JdbcTemplate template = new JdbcTemplate(dataSource);
 
-        List rows = template.queryForList("select * from t_data where 1=1");
-//        List rows = template.queryForList("SELECT * FROM t_data WHERE 1=1  and name = 'BankingData111'");
+//        List rows = template.queryForList("select * from t_data where 1=1");
+////        List rows = template.queryForList("SELECT * FROM t_data WHERE 1=1  and name = 'data_test3'");
+//
+//        for (int i = 0; i < rows.size(); i++) {
+//            System.out.println("===============================");
+//            System.out.println(rows.get(i));  //.get(index)
+//        }
 
+//        List<Map<String, Object>> result = template.queryForList("select * from t_data where 1=1");
+        List<Map<String, Object>> result = template.queryForList("SELECT * FROM t_data WHERE 1=1  and name = 'data_test3'");
 
-        for (int i = 0; i < rows.size(); i++) {
-            System.out.println("===============================");
-            System.out.println(rows.get(i));  //.get(index)
+        for (Map<String, Object> map : result) {
+            for (String s : map.keySet()) {
+                System.out.print(map.get(s) + "  ");
+            }
         }
+        System.out.println();
+        System.out.println("========================");
+        for (int i = 0; i < result.size(); i++) {
+            Map<String, Object> map = result.get(i);
+            Iterator iterator = map.keySet().iterator();
+            while (iterator.hasNext()) {
+                String string = (String) iterator.next();
+                System.out.println(map.get(string));
+            }
+        }
+        System.out.println("++++++++++++++++++++++++++++");
+        for (Map<String, Object> map : result) {
+            for (Map.Entry<String, Object> m : map.entrySet()) {
+                System.out.print(m.getKey() + "    ");
+                System.out.println(m.getValue());
+            }
+        }
+        System.out.println("-----------------------------");
 
     }
+
+
 
 
 }
