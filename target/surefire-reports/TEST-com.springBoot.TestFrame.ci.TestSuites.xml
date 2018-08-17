@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.springBoot.TestFrame.ci.TestSuites" time="0.36" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.springBoot.TestFrame.ci.TestSuites" time="345.698" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="CN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
-    <property name="test" value="com.springBoot.TestFrame.ci.TestSuites"/>
+    <property name="test" value="ci.TestSuites"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/Users/lilei/Documents/git/TestFrame"/>
     <property name="java.runtime.version" value="1.8.0_171-b11"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean compile test -U -Dtest=com.springBoot.TestFrame.ci.TestSuites"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean compile test -U -Dtest=ci.TestSuites"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -64,6 +64,14 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="test01" classname="com.springBoot.TestFrame.machineLearning.TestDa" time="0.007"/>
-  <testcase name="DataPreviewTest" classname="com.springBoot.TestFrame.machineLearning.DataPreviewTest" time="0.09"/>
+  <testcase name="SaveTest" classname="com.springBoot.TestFrame.machineLearning.DataSource.DataSaveTest" time="19.606"/>
+  <testcase name="ConnectionTest" classname="com.springBoot.TestFrame.machineLearning.DataSource.DbConnectionTest" time="0.002"/>
+  <testcase name="PreviewTest" classname="com.springBoot.TestFrame.machineLearning.DataSource.DbPreviewTest" time="0.007"/>
+  <testcase name="delData" classname="com.springBoot.TestFrame.machineLearning.DataSource.DelSourceDataTest" time="11.872"/>
+  <testcase name="FileloadTest" classname="com.springBoot.TestFrame.machineLearning.DataSource.LocalFileUploadTest" time="11.35"/>
+  <testcase name="DataCheckTest" classname="com.springBoot.TestFrame.machineLearning.DataSource.LocalFileUploadTest" time="13.28"/>
+  <testcase name="PreviewTestSuc" classname="com.springBoot.TestFrame.machineLearning.DataSource.PreviewTest" time="12.399"/>
+  <testcase name="ShowLogSucTest" classname="com.springBoot.TestFrame.machineLearning.DataSource.ShowLogTest" time="144.739"/>
+  <testcase name="TableTest" classname="com.springBoot.TestFrame.machineLearning.DataSource.TableListTest" time="0.017"/>
+  <testcase name="TablePreviewTest" classname="com.springBoot.TestFrame.machineLearning.DataSource.TablePreviewTest" time="132.271"/>
 </testsuite>

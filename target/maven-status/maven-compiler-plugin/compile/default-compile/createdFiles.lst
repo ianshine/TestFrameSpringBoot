@@ -1,6 +1,0 @@
-com/springBoot/TestFrame/jdbc/JdbcUtil.class
-com/springBoot/TestFrame/util/GetEvnAddress.class
-com/springBoot/TestFrame/dataSource/InsertRecordInDatabaseWithJdbcTemplate.class
-com/springBoot/TestFrame/jdbc/JdbcUtilTest.class
-com/springBoot/TestFrame/TestFrameApplication.class
-com/springBoot/TestFrame/httpUtil/HttpRequestUtil.class
